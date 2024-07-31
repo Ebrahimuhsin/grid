@@ -1,0 +1,86 @@
+
+.icon{
+    grid-area: icon;
+    background-color:green;
+    text-align: center;
+    font-size: 40px;
+}
+.nav{
+    grid-area: nav;
+    background-color: beige;
+}
+.nav a{
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+.nav a:hover{
+    color:white;
+    background-color: black;
+    display: inline-block;
+}
+.menu{
+    grid-area: menu;
+    background-color: whitesmoke;
+}
+.menu p{
+    padding-left: 10px;
+}
+.menu h1{
+    padding-left: 10px;
+}
+
+.img{
+    grid-area: img;
+    background-color: grey;
+}
+.img img{
+    width:270px;
+    height: 485px;
+}
+.msg{
+    grid-area: msg;
+    background-color:lightgreen; 
+}
+.msg p{
+    text-align: center;
+    font-weight: 900;
+
+
+}
+.info{
+    grid-area: info;
+    background-color: greenyellow;
+}
+.info2{
+    grid-area: info2;
+    background-color:darkgreen;
+}
+a.read{
+    color: black;
+    text-decoration: none;
+    padding: 25%;
+}
+a.view{ 
+    color: black;
+    text-decoration: none;
+    padding: 25%;
+}
+.view:hover{
+    color: white;
+}
+.read:hover{
+    color: white;
+}
+.main{
+    display: grid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 25%;
+    grid-template-areas:
+    'icon icon icon icon nav nav nav'
+    'menu menu menu menu img img img'
+    'msg msg msg msg img img img'
+    'info info info2 info2 img img img';
+    grid-template-rows: 75px 320px 100px 65px;
+}
